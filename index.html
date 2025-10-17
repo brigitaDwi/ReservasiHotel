@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Reservation Hotel Room</h1>
+      <p class="subtitle">Book Your Dream Room With Us</p>
+    </header>
+
+    <section class="room-showcase">
+      <div class="room-card">
+        <img src="room1.jpg" alt="Deluxe Room" />
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <p>Elegance with modern comfort</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="room2.jpg" alt="Suite Room" />
+        <div class="room-info">
+          <h3>Suite Room</h3>
+          <p>Luxury and spacious ambience</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="room3.jpg" alt="Standard Room" />
+        <div class="room-info">
+          <h3>Standard Room</h3>
+          <p>Cozy and minimalist comfort</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="room4.jpg" alt="Executive Room" />
+        <div class="room-info">
+          <h3>Executive Room</h3>
+          <p>Premium experience for professionals</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-container">
+      <form action="" method="post">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <p>Name<br />
+            <input type="text" name="name" required />
+          </p>
+
+          <p>Gender<br />
+            <select name="gender" required>
+              <option value="">Select...</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </p>
+
+          <p>Email Address<br />
+            <input type="email" name="email" required />
+          </p>
+
+          <p>Phone Number<br />
+            <input type="text" name="telp" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Room Reservation</legend>
+          <p>Reservation Name<br />
+            <input type="text" name="reservation_name" required />
+          </p>
+
+          <p>Booking Date<br />
+            <input type="date" name="booking_date" required />
+          </p>
+
+          <p>Room Type<br />
+            <select name="room_type">
+              <option>Deluxe</option>
+              <option>Standard</option>
+              <option>Suite</option>
+              <option>Executive</option>
+            </select>
+          </p>
+
+          <p>Bed Type<br />
+            <select name="bed_type">
+              <option>Single Bed</option>
+              <option>Double Bed</option>
+            </select>
+          </p>
+
+          <p>Breakfast<br />
+            <label><input type="radio" name="breakfast" value="With Breakfast" /> With Breakfast</label>
+            <label><input type="radio" name="breakfast" value="Without Breakfast" /> Without Breakfast</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Information</legend>
+
+          <p>Check-in Date<br />
+            <input type="date" name="checkin" required />
+          </p>
+
+          <p>Check-out Date<br />
+            <input type="date" name="checkout" required />
+          </p>
+
+          <p>Payment Method<br />
+            <select name="payment_method">
+              <option>Cash</option>
+              <option>Credit Card</option>
+              <option>Bank Transfer</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Submit Reservation</button>
+      </form>
+    </section>
+  </body>
+</html>
